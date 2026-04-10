@@ -1,0 +1,179 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 20px 0;
+}
+
+.nav.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 20px rgba(0,0,0,0.08);
+  padding: 12px 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 44px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  transition: filter var(--transition-base);
+  animation: logoPulse 0.8s ease 0.5s;
+}
+
+.nav.scrolled .logoImg {
+  filter: none;
+}
+
+@keyframes logoPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all var(--transition-base);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  position: relative;
+}
+
+.nav.scrolled .link {
+  color: var(--gray-700);
+}
+
+.link:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav.scrolled .link:hover {
+  color: var(--red);
+  background: var(--red-light);
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background: var(--red);
+  transform: scaleX(0);
+  transition: transform var(--transition-base);
+  border-radius: 1px;
+}
+
+.link:hover::after,
+.active::after {
+  transform: scaleX(1);
+}
+
+.active {
+  color: var(--white);
+}
+
+.nav.scrolled .active {
+  color: var(--red);
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-fast);
+}
+
+.hamburger:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.nav.scrolled .hamburger:hover {
+  background: var(--gray-100);
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 1px;
+  transition: all 0.3s ease;
+}
+
+.nav.scrolled .hamburger span {
+  background: var(--navy);
+}
+
+.mobile {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--white);
+  border-top: 1px solid transparent;
+}
+
+.mobileOpen {
+  max-height: 320px;
+  border-top-color: var(--gray-200);
+}
+
+.mobileLink {
+  display: block;
+  font-weight: 500;
+  color: var(--gray-700);
+  padding: 14px 40px;
+  transition: all var(--transition-fast);
+  font-size: 15px;
+}
+
+.mobileLink:hover,
+.mobileLink.active {
+  color: var(--red);
+  background: var(--red-light);
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .nav.scrolled {
+    padding: 12px 0;
+  }
+  .logoImg {
+    height: 36px;
+  }
+}

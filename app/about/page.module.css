@@ -1,0 +1,236 @@
+.page {}
+
+.header {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: var(--white);
+  padding: 140px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  right: -40px;
+  width: 300px;
+  height: 300px;
+  background: rgba(200, 16, 46, 0.06);
+  border-radius: 50%;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--red), transparent);
+}
+
+.tag {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: var(--red);
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  font-size: clamp(36px, 5vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* CEO */
+.ceo {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 56px;
+  padding: 80px 0;
+  align-items: start;
+}
+
+.ceoImg {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.ceoContent blockquote {
+  font-size: 20px;
+  font-style: italic;
+  color: var(--red);
+  border-left: 4px solid var(--red);
+  padding-left: 24px;
+  margin-bottom: 28px;
+  line-height: 1.7;
+}
+
+.ceoContent p {
+  font-size: 15px;
+  color: var(--gray-600);
+  margin-bottom: 18px;
+  line-height: 1.85;
+}
+
+.sig {
+  font-weight: 600;
+  color: var(--navy) !important;
+  margin-top: 8px !important;
+  font-size: 14px !important;
+}
+
+/* Overview */
+.overview {
+  padding: 0 0 80px;
+  max-width: 800px;
+}
+
+.overview h2 {
+  font-size: 30px;
+  color: var(--navy);
+  margin-bottom: 24px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.overview p {
+  font-size: 15px;
+  color: var(--gray-600);
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+/* Vision & Mission */
+.vm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: 0 0 80px;
+}
+
+.vmCard {
+  background: var(--gray-50);
+  padding: 40px;
+  border-radius: var(--radius-md);
+  border-top: 4px solid var(--red);
+  transition: all var(--transition-slow);
+  border: 1px solid var(--gray-200);
+  border-top: 4px solid var(--red);
+}
+
+.vmCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+  border-top: 4px solid var(--red);
+}
+
+.vmCard h3 {
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.vmCard p {
+  font-size: 15px;
+  color: var(--gray-600);
+  line-height: 1.75;
+}
+
+/* Commitment */
+.commitment {
+  padding: 72px 0;
+  text-align: center;
+  border-top: 1px solid var(--gray-200);
+}
+
+.commitment blockquote {
+  font-size: 28px;
+  font-style: italic;
+  color: var(--navy);
+  margin-bottom: 24px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+.commitment p {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 15px;
+  color: var(--gray-600);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 120px 0 56px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .ceo {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 48px 0;
+  }
+
+  .ceoImg {
+    height: 240px;
+  }
+
+  .ceoContent blockquote {
+    font-size: 16px;
+    padding-left: 16px;
+  }
+
+  .ceoContent p {
+    font-size: 14px;
+  }
+
+  .overview {
+    padding: 0 0 48px;
+  }
+
+  .overview h2 {
+    font-size: 24px;
+  }
+
+  .overview p {
+    font-size: 14px;
+  }
+
+  .vm {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 0 48px;
+  }
+
+  .vmCard {
+    padding: 28px;
+  }
+
+  .vmCard h3 {
+    font-size: 19px;
+  }
+
+  .commitment {
+    padding: 48px 0;
+  }
+
+  .commitment blockquote {
+    font-size: 22px;
+  }
+
+  .commitment p {
+    font-size: 14px;
+  }
+}

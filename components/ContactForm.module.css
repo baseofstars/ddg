@@ -1,0 +1,168 @@
+.formWrap {
+  background: var(--white);
+  padding: 40px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Floating label fields */
+.field {
+  position: relative;
+}
+
+.field input,
+.field textarea {
+  padding: 24px 18px 8px;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+  transition: all var(--transition-base);
+  background: var(--gray-50);
+  color: var(--gray-800);
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--navy);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.08);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: transparent;
+}
+
+.field label {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--gray-400);
+  pointer-events: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: left center;
+}
+
+.field textarea + label {
+  top: 20px;
+  transform: translateY(0);
+}
+
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label {
+  top: 10px;
+  transform: translateY(0) scale(0.8);
+  color: var(--red);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.field textarea:focus + label,
+.field textarea:not(:placeholder-shown) + label {
+  top: 6px;
+  transform: translateY(0) scale(0.8);
+  color: var(--red);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.submit {
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 16px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  align-self: flex-start;
+  transition: all var(--transition-base);
+  letter-spacing: 0.5px;
+}
+
+.submit:hover {
+  background: var(--red-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(200, 16, 46, 0.3);
+}
+
+.submit:active {
+  transform: translateY(0);
+}
+
+/* Success state */
+.success {
+  padding: 64px;
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+  text-align: center;
+  border: 1px solid var(--gray-200);
+}
+
+.checkmark {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+  animation: checkPop 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes checkPop {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.success h2 {
+  color: var(--navy);
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.success p {
+  color: var(--gray-500);
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .formWrap {
+    padding: 20px;
+  }
+  .row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .form {
+    gap: 16px;
+  }
+  .submit {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .success {
+    padding: 40px 24px;
+  }
+}
