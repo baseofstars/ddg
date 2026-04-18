@@ -48,13 +48,12 @@ export default function Footer() {
         <div className={styles.contactCol}>
           <h4>Contact Us</h4>
           <div className={styles.contactItem}>
-            <strong>Dubai, UAE</strong>
-            <p>P.O. Box 123456, Deira, Dubai, UAE</p>
+            <strong>Address</strong>
+            <p>Port Saeed, Deira, Dubai, UAE</p>
           </div>
           <div className={styles.contactItem}>
             <strong>Phone</strong>
-            <p>+971 4 123 4567</p>
-            <p>+971 50 123 4567</p>
+            <p>+971 55 223 3124</p>
           </div>
           <div className={styles.contactItem}>
             <strong>Email</strong>

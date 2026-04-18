@@ -2,7 +2,7 @@
 import styles from './WhatsAppWidget.module.css'
 
 export default function WhatsAppWidget() {
-  const phoneNumber = '+971501234567' // Placeholder
+  const phoneNumber = '+971552233124'
   const message = 'Hello, I would like to inquire about your shipping services.'
   
   const whatsappUrl = `https://wa.me/${phoneNumber.replace('+', '')}?text=${encodeURIComponent(message)}`

@@ -6,7 +6,7 @@ const services = [
   {
     title: 'Event & Exhibition Logistics',
     desc: 'Our core expertise. We specialize in the precision transport of goods for international concerts, trade fairs, fine art movements, conventions, and sporting events. We provide end-to-door solutions including customs clearance, ATA Carnet handling, and on-site material handling with 24/7 support.',
-    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop',
     bullets: ['Concerts, trade fairs & symposiums', 'Fine art & museum exhibits', 'ATA Carnet management', '24/7 on-site support', 'Stage & booth delivery'],
   },
   {

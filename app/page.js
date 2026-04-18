@@ -7,7 +7,7 @@ import ProgressiveImage from '@/components/ProgressiveImage'
 
 const stats = [
   { 
-    number: 15, 
+    number: 2, 
     suffix: '+', 
     label: 'Years Experience',
     icon: (
@@ -18,7 +18,7 @@ const stats = [
     )
   },
   { 
-    number: 50000, 
+    number: 5000, 
     suffix: 'T', 
     label: 'Cargo Handled Monthly',
     icon: (
@@ -257,7 +257,7 @@ export default function Home() {
           <div className={styles.sectionHeader}>
             <ScrollReveal>
               <p className={styles.sectionTag}>OUR REACH</p>
-              <h2 className={styles.sectionTitle}>Global Presence – Local Strategy</h2>
+              <h2>From Dubai to the World — We Deliver</h2>
             </ScrollReveal>
           </div>
           <ScrollReveal delay={100}>
@@ -269,7 +269,7 @@ export default function Home() {
           </ScrollReveal>
           <ScrollReveal delay={200}>
             <p className={styles.globalText}>
-              Serving the expanding markets of the Middle East and beyond with deep local expertise and a worldwide carrier network.
+              Rooted in the UAE, reaching across the GCC and beyond — we move cargo with local precision and global ambition.
             </p>
           </ScrollReveal>
         </div>

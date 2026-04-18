@@ -33,11 +33,11 @@ export default function Contact() {
               </div>
               <div className={styles.infoItem}>
                 <strong>Phone</strong>
-                <p>+971 4 XXX XXXX (Dubai)</p>
+                <p>+971 55 223 3124</p>
               </div>
               <div className={styles.infoItem}>
                 <strong>Address</strong>
-                <p>Dubai, UAE</p>
+                <p>Port Saeed, Deira, Dubai, UAE</p>
               </div>
               <div className={styles.infoItem}>
                 <strong>Office Hours</strong>

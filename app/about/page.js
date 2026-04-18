@@ -19,11 +19,6 @@ export default function About() {
       <div className="container">
         <ScrollReveal>
           <section className={styles.ceo}>
-            <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop"
-              alt="CEO"
-              className={styles.ceoImg}
-            />
             <div className={styles.ceoContent}>
               <p className={styles.tag}>CEO'S MESSAGE</p>
               <blockquote>
