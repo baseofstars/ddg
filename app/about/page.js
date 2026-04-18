@@ -20,7 +20,7 @@ export default function About() {
         <ScrollReveal>
           <section className={styles.ceo}>
             <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80"
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop"
               alt="CEO"
               className={styles.ceoImg}
             />
@@ -78,6 +78,30 @@ export default function About() {
             <p>
               Integrity is our foundation. At DD FREIGHT LLC, we believe that business conduct is only ethical when based on transparency, accountability, and continuous improvement. We don't just deliver your cargo; we deliver peace of mind.
             </p>
+          </section>
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <section className={styles.fleet}>
+            <p className={styles.tag}>OUR REACH</p>
+            <h2>Global Network & Fleet</h2>
+            <p className={styles.fleetDesc}>
+              With a robust network of partners and a state-of-the-art fleet, we ensure your cargo moves seamlessly across air, sea, and land. Our global reach combined with local strategy makes us the preferred choice for complex logistics.
+            </p>
+            <div className={styles.fleetGrid}>
+              <div className={styles.fleetItem}>
+                <img src="https://images.unsplash.com/photo-1574684532296-1c290a613292?q=80&w=800&auto=format&fit=crop" alt="Sea Freight" />
+                <span>Ocean Carriers</span>
+              </div>
+              <div className={styles.fleetItem}>
+                <img src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?q=80&w=800&auto=format&fit=crop" alt="Air Freight" />
+                <span>Air Cargo</span>
+              </div>
+              <div className={styles.fleetItem}>
+                <img src="https://images.unsplash.com/photo-1519003722824-192d9920105b?q=80&w=800&auto=format&fit=crop" alt="Land Transport" />
+                <span>Ground Fleet</span>
+              </div>
+            </div>
           </section>
         </ScrollReveal>
       </div>

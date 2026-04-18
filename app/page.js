@@ -6,82 +6,81 @@ import ScrollReveal from '@/components/ScrollReveal'
 import ProgressiveImage from '@/components/ProgressiveImage'
 
 const stats = [
-  { number: 15, suffix: '+', label: 'Years Experience' },
-  { number: 50000, suffix: 'T', label: 'Cargo Handled Monthly' },
-  { number: 4, suffix: '', label: 'Countries Covered' },
-]
-
-const services = [
-  {
-    title: 'Event & Exhibition Logistics',
-    desc: 'End-to-end precision transport for concerts, trade fairs, fine art, and sporting events across the GCC.',
-    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80',
-  },
-  {
-    title: 'Air & Sea Freight',
-    desc: 'Seamless supply chain management via major shipping lines and airlines.',
-    image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&q=80',
-  },
-  {
-    title: 'Land Transport & Warehousing',
-    desc: 'Door-to-door delivery across the GCC with professional storage.',
-    image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=80',
-  },
-]
-
-const eventTypes = [
-  {
-    title: 'Concerts & Live Shows',
-    desc: 'Stage equipment, lighting rigs, sound systems — delivered on time for load-in, every time.',
+  { 
+    number: 15, 
+    suffix: '+', 
+    label: 'Years Experience',
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M9 18V5l12-2v13" />
-        <circle cx="6" cy="18" r="3" />
-        <circle cx="18" cy="16" r="3" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Trade Fairs & Exhibitions',
-    desc: 'Booth materials, displays, and products from origin to exhibition floor — customs cleared and ready.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="3" width="7" height="7" />
-        <rect x="14" y="3" width="7" height="7" />
-        <rect x="14" y="14" width="7" height="7" />
-        <rect x="3" y="14" width="7" height="7" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Fine Art & Museum Exhibits',
-    desc: 'Climate-controlled, white-glove transport for irreplaceable artwork and cultural artifacts.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-        <circle cx="8.5" cy="8.5" r="1.5" />
-        <polyline points="21 15 16 10 5 21" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Sporting Events',
-    desc: 'Broadcast equipment, infrastructure, and team logistics for regional and international events.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
-        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-        <path d="M2 12h20" />
+        <polyline points="12 6 12 12 16 14" />
       </svg>
-    ),
+    )
+  },
+  { 
+    number: 50000, 
+    suffix: 'T', 
+    label: 'Cargo Handled Monthly',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M7 10l5 5 5-5" />
+        <path d="M12 15V3" />
+        <path d="M21 10v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10" />
+      </svg>
+    )
+  },
+  { 
+    number: 1000, 
+    suffix: '+', 
+    label: 'Delivered Packages',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+        <polyline points="3.29 7 12 12 20.71 7" />
+        <line x1="12" y1="22" x2="12" y2="12" />
+      </svg>
+    )
+  },
+  { 
+    number: 365, 
+    suffix: '', 
+    label: 'Days Support',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        <path d="M12 2v2" />
+        <path d="M12 20v2" />
+        <path d="M4.93 4.93l1.41 1.41" />
+        <path d="M17.66 17.66l1.41 1.41" />
+        <path d="M2 12h2" />
+        <path d="M20 12h2" />
+        <path d="M6.34 17.66l-1.41 1.41" />
+        <path d="M19.07 4.93l-1.41 1.41" />
+      </svg>
+    )
   },
 ]
 
-const process = [
-  { step: '01', title: 'Inquiry & Planning', desc: 'Share your event details — we map every milestone, deadline, and compliance requirement.' },
-  { step: '02', title: 'Coordination & Booking', desc: 'We secure cargo space, handle documentation, and coordinate with venues and organizers.' },
-  { step: '03', title: 'Transport & Execution', desc: 'Your cargo moves via air, sea, or land with real-time tracking and 24/7 support.' },
-  { step: '04', title: 'On-Site & Return', desc: 'We deliver to booth or stage, assist with setup, and manage return logistics when the event closes.' },
+const partners = [
+  'Emirates SkyCargo', 'Etihad Cargo', 'Air Arabia', 'Qatar Airways', 'Korean Air', 'Turkish Airlines', 'Lufthansa Cargo', 'FedEx', 'DHL'
+]
+
+const sportsServices = [
+  {
+    title: 'Time-Critical Freight',
+    desc: 'Express forwarding via Air, Sea & Land to meet tight broadcast deadlines.',
+    image: 'https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    title: 'Customs & Permits',
+    desc: 'Expert handling of ATA Carnet, CPD & Temporary Permits for global movement.',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    title: 'Sensitive Equipment',
+    desc: 'Safe transport of high-value broadcast gear, cameras, and drones.',
+    image: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop',
+  },
 ]
 
 export default function Home() {
@@ -104,33 +103,38 @@ export default function Home() {
         <div className={styles.heroGrain} />
         <div ref={heroImgRef} className={styles.heroImgWrap}>
           <img
-            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80"
-            alt="Event logistics"
+            src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=1920&auto=format&fit=crop"
+            alt="Mighty container ship at sea"
             className={styles.heroImg}
           />
         </div>
         <div className={styles.heroOverlay}>
-          <p className={styles.heroSub}>EVENT & EXHIBITION LOGISTICS</p>
-          <h1 className={styles.heroTitle}>Precision in Motion</h1>
-          <p className={styles.heroSub2}>From Stage to Booth — We Deliver</p>
-          <div className={styles.heroBtns}>
-            <a href="/contact" className={styles.btnPrimary}>Get a Quote</a>
-            <a href="/services" className={styles.btnOutline}>Our Services</a>
-          </div>
+          <ScrollReveal>
+            <p className={styles.heroSub}>SPECIALIZED SOLUTIONS</p>
+            <h1 className={styles.heroTitle}>Media & Sports Logistics</h1>
+            <p className={styles.heroSub2}>Precision in Motion. Speed on Demand. Reliability You Trust.</p>
+            <div className={styles.heroBtns}>
+              <a href="/contact" className={styles.btnPrimary}>Get a Quote</a>
+              <a href="/services" className={styles.btnOutline}>Our Services</a>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
-      {/* Stats */}
+      {/* Stats Section */}
       <section className={styles.stats}>
         <div className="container">
           <ScrollReveal>
             <div className={styles.statsGrid}>
-              {stats.map((s) => (
-                <div key={s.label} className={styles.stat}>
-                  <span className={styles.statNum}>
-                    <CountUp end={s.number} suffix={s.suffix} duration={2000} />
-                  </span>
-                  <span className={styles.statLabel}>{s.label}</span>
+              {stats.map((s, i) => (
+                <div key={s.label} className={styles.statCard}>
+                  <div className={styles.statIcon}>{s.icon}</div>
+                  <div className={styles.statContent}>
+                    <span className={styles.statNum}>
+                      <CountUp end={s.number} suffix={s.suffix} duration={2000} />
+                    </span>
+                    <span className={styles.statLabel}>{s.label}</span>
+                  </div>
                 </div>
               ))}
             </div>
@@ -138,18 +142,72 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services */}
-      <section className={styles.services}>
-        <div className={styles.blob1} />
+      {/* Partners Marquee */}
+      <section className={styles.partners}>
+        <div className={styles.marquee}>
+          <div className={styles.marqueeContent}>
+            {[...partners, ...partners].map((p, i) => (
+              <span key={i} className={styles.partnerName}>{p}</span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Spotlight Content Section */}
+      <section className={styles.spotlight}>
         <div className="container">
-          <div className={styles.sectionHeader}>
+          <div className={styles.spotlightGrid}>
             <ScrollReveal>
-              <p className={styles.sectionTag}>OUR EXPERTISE</p>
-              <h2 className={styles.sectionTitle}>Event Logistics is Our Core</h2>
+              <div className={styles.spotlightText}>
+                <p className={styles.sectionTag}>WHAT WE DO</p>
+                <h2>We Move the Moments That Matter</h2>
+                <p className={styles.lead}>
+                  In the adrenaline-fueled world of live broadcasts and global sporting events, logistics isn’t just about transport — it’s about delivering the show, flawlessly.
+                </p>
+                <p>
+                  At DD Freight, we specialize in moving the equipment that makes the magic happen. From sensitive broadcast equipment and stage setups to OB vans and athletic gear, we provide tailored logistics that keep your production running like clockwork — wherever in the world it happens.
+                </p>
+                <p>
+                  Whether it’s cameras or drones for a film set, props for a live concert, or mobile broadcast units for a telecast, our team ensures every move is handled with precision, care, and urgency. Wherever the spotlight shines — DD Freight moves your vision with confidence.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <div className={styles.spotlightFeatures}>
+                <h3>Our Specialized Services</h3>
+                <ul className={styles.featureList}>
+                  <li>
+                    <strong>Time-Critical Freight Forwarding</strong>
+                    <span>Air, Sea & Land solutions for urgent requirements.</span>
+                  </li>
+                  <li>
+                    <strong>Import/Export Clearance</strong>
+                    <span>ATA Carnet, CPD & Temporary Permits experts.</span>
+                  </li>
+                  <li>
+                    <strong>Safe Transport of Sensitive Gear</strong>
+                    <span>White-glove handling for high-value equipment.</span>
+                  </li>
+                  <li>
+                    <strong>On-Site Delivery & Support</strong>
+                    <span>Professional setup and dismantling support at venues.</span>
+                  </li>
+                  <li>
+                    <strong>Secure Storage & Returns</strong>
+                    <span>Complete reverse logistics and short-term storage.</span>
+                  </li>
+                </ul>
+              </div>
             </ScrollReveal>
           </div>
+        </div>
+      </section>
+
+      {/* Sports Services Grid */}
+      <section className={styles.services}>
+        <div className="container">
           <div className={styles.servicesGrid}>
-            {services.map((s, i) => (
+            {sportsServices.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 120}>
                 <div className={styles.serviceCard}>
                   <div className={styles.serviceImgWrap}>
@@ -158,9 +216,6 @@ export default function Home() {
                   </div>
                   <h3>{s.title}</h3>
                   <p>{s.desc}</p>
-                  <a href="/services">
-                    Learn More <span className={styles.arrow}>&rarr;</span>
-                  </a>
                 </div>
               </ScrollReveal>
             ))}
@@ -168,46 +223,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Event Types */}
-      <section className={styles.eventTypes}>
+      {/* Quick Quote Form */}
+      <section className={styles.quickQuote}>
         <div className="container">
           <ScrollReveal>
-            <p className={styles.sectionTag}>WHAT WE HANDLE</p>
-            <h2 className={styles.sectionTitle}>Events We Power</h2>
+            <div className={styles.quoteCard}>
+              <div className={styles.quoteInfo}>
+                <p className={styles.sectionTag}>REQUEST A QUOTE</p>
+                <h2>Ready to Move Your Cargo?</h2>
+                <p>Get a customized shipping quote within 24 hours from our team of experts.</p>
+              </div>
+              <form className={styles.quoteForm} onSubmit={(e) => e.preventDefault()}>
+                <input type="text" placeholder="Full Name" required />
+                <input type="email" placeholder="Email Address" required />
+                <select required defaultValue="">
+                  <option value="" disabled>Service Type</option>
+                  <option value="media">Media & Sports</option>
+                  <option value="air">Air Freight</option>
+                  <option value="sea">Sea Freight</option>
+                  <option value="land">Land Transport</option>
+                </select>
+                <button type="submit" className={styles.btnPrimary}>Submit Request</button>
+              </form>
+            </div>
           </ScrollReveal>
-          <div className={styles.eventGrid}>
-            {eventTypes.map((e, i) => (
-              <ScrollReveal key={e.title} delay={i * 100}>
-                <div className={styles.eventCard}>
-                  <div className={styles.eventIcon}>{e.icon}</div>
-                  <h3>{e.title}</h3>
-                  <p>{e.desc}</p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section className={styles.process}>
-        <div className="container">
-          <ScrollReveal>
-            <p className={styles.sectionTagDark}>HOW IT WORKS</p>
-            <h2 className={styles.processTitle}>From Inquiry to On-Site</h2>
-          </ScrollReveal>
-          <div className={styles.processGrid}>
-            {process.map((p, i) => (
-              <ScrollReveal key={p.step} delay={i * 100}>
-                <div className={styles.processCard}>
-                  <span className={styles.processStep}>{p.step}</span>
-                  <h3>{p.title}</h3>
-                  <p>{p.desc}</p>
-                  {i < process.length - 1 && <div className={styles.processLine} />}
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -230,7 +269,7 @@ export default function Home() {
           </ScrollReveal>
           <ScrollReveal delay={200}>
             <p className={styles.globalText}>
-              Serving the expanding markets of the Middle East and beyond with deep local expertise and global network.
+              Serving the expanding markets of the Middle East and beyond with deep local expertise and a worldwide carrier network.
             </p>
           </ScrollReveal>
         </div>
@@ -241,7 +280,8 @@ export default function Home() {
         <div className="container">
           <ScrollReveal>
             <h2>Planning your next event?</h2>
-            <a href="/contact" className={styles.btnPrimary}>Get in Touch</a>
+            <p>Our team is ready to provide you with the most efficient logistics strategy.</p>
+            <a href="/contact" className={styles.btnPrimary}>Contact Us Today</a>
           </ScrollReveal>
         </div>
       </section>

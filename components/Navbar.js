@@ -38,6 +38,9 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
+          <Link href="/contact" className={styles.navBtn}>
+            Get a Quote
+          </Link>
         </div>
         <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
           <span />

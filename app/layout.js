@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollProgress from '@/components/ScrollProgress'
 import BackToTop from '@/components/BackToTop'
+import WhatsAppWidget from '@/components/WhatsAppWidget'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <main className="page-enter">{children}</main>
         <Footer />
         <BackToTop />
+        <WhatsAppWidget />
       </body>
     </html>
   )

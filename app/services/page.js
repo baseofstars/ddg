@@ -6,37 +6,37 @@ const services = [
   {
     title: 'Event & Exhibition Logistics',
     desc: 'Our core expertise. We specialize in the precision transport of goods for international concerts, trade fairs, fine art movements, conventions, and sporting events. We provide end-to-door solutions including customs clearance, ATA Carnet handling, and on-site material handling with 24/7 support.',
-    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop',
     bullets: ['Concerts, trade fairs & symposiums', 'Fine art & museum exhibits', 'ATA Carnet management', '24/7 on-site support', 'Stage & booth delivery'],
   },
   {
     title: 'Air & Sea Freight',
     desc: 'We offer seamless supply chain management via major shipping lines and airlines. From LCL consolidation to full vessel chartering, our licensed customs brokers ensure your cargo clears international borders without a hitch. We prioritize guaranteed space for urgent, time-sensitive event shipments.',
-    image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1574684532296-1c290a613292?q=80&w=800&auto=format&fit=crop',
     bullets: ['LCL & FCL consolidation', 'Full vessel chartering', 'Customs clearance', 'Guaranteed space for urgent shipments'],
   },
   {
     title: 'Vessel & Cargo Chartering',
     desc: 'For urgent, time-critical freight, we offer dedicated vessel and cargo flight chartering. Our global network allows us to pick up from the country of origin and deliver directly to the booth or stage, ensuring your event cargo arrives exactly when needed.',
-    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=800&auto=format&fit=crop',
     bullets: ['Dedicated vessel chartering', 'Cargo flight chartering', 'Origin pickup to booth delivery', 'Time-critical freight specialists'],
   },
   {
     title: 'Land Transport & Warehousing',
     desc: 'Our dependable fleet provides cost-effective, door-to-door delivery across the GCC. Our warehousing solutions include short-term and long-term storage, professional packing and crating, Pick & Pack services, and forklift/man-lift equipment for on-site logistics.',
-    image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1519003722824-192d9920105b?q=80&w=800&auto=format&fit=crop',
     bullets: ['Door-to-door GCC delivery', 'Short & long-term storage', 'Packing, crating & palletizing', 'Forklift & man-lift equipment'],
   },
   {
     title: 'Project & Heavy Lift Logistics',
     desc: 'We manage complex projects for the oil & gas, energy, and construction sectors, handling upwards of 50,000 tons of cargo per month. Our expertise includes site evaluation, decommissioning, and the transport of oversized/overweight machinery using specialized equipment and a state-of-the-art fleet.',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=800&auto=format&fit=crop',
     bullets: ['50,000+ tons/month capacity', 'Oversized/overweight transport', 'Site evaluation & decommissioning', 'State-of-the-art fleet'],
   },
   {
     title: 'Customs & Compliance',
     desc: 'We provide comprehensive customs formalities and ATA Carnet management. Our IOR & EOR services (Importer/Exporter of Record) ensure your cargo complies with all international trade regulations, reducing delays and ensuring smooth cross-border movement.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop',
     bullets: ['IOR & EOR services', 'ATA Carnet management', 'Full customs formalities', 'International trade compliance'],
   },
 ]
@@ -52,9 +52,9 @@ export default function Services() {
       <div className={styles.header}>
         <div className="container">
           <p className={styles.tag}>OUR SERVICES</p>
-          <h1>What We Offer</h1>
+          <h1>Endless Freight Solutions</h1>
           <p className={styles.intro}>
-            Event logistics is our core — from concerts to trade fairs, we deliver with zero-delay precision across the GCC.
+            From air and sea freight to specialized event logistics, we provide comprehensive, zero-delay solutions across the GCC and beyond.
           </p>
         </div>
       </div>

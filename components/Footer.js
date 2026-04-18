@@ -10,32 +10,69 @@ export default function Footer() {
         </svg>
       </div>
       <div className={styles.inner}>
-        <div className={styles.brand}>
-          <img src="/logo.png" alt="DD FREIGHT LLC" />
-          <p>GLOBAL LOGISTICS | EVENT SPECIALISTS</p>
+        <div className={styles.brandCol}>
+          <Link href="/">
+            <img src="/logo.png" alt="DD FREIGHT LLC" className={styles.logo} />
+          </Link>
+          <p className={styles.tagline}>GLOBAL LOGISTICS | EVENT SPECIALISTS</p>
+          <p className={styles.desc}>
+            Trusted Shipping and Logistics Services in UAE. We provide end-to-end precision transport across the GCC and beyond.
+          </p>
+          <div className={styles.socials}>
+            <a href="#" className={styles.socialLink} aria-label="LinkedIn">LN</a>
+            <a href="#" className={styles.socialLink} aria-label="Instagram">IG</a>
+            <a href="#" className={styles.socialLink} aria-label="Facebook">FB</a>
+            <a href="#" className={styles.socialLink} aria-label="WhatsApp">WA</a>
+          </div>
         </div>
-        <div className={styles.links}>
+
+        <div className={styles.linkCol}>
           <h4>Quick Links</h4>
           <Link href="/">Home</Link>
-          <Link href="/services">Services</Link>
           <Link href="/about">About Us</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/services">Our Services</Link>
+          <Link href="/contact">Contact Us</Link>
+          <Link href="/contact" className={styles.quoteLink}>Get a Quote</Link>
         </div>
-        <div className={styles.contact}>
-          <h4>Contact</h4>
-          <p>info@ddfreight.com</p>
-          <p>+971 4 XXX XXXX</p>
-          <p>Dubai, UAE</p>
+
+        <div className={styles.linkCol}>
+          <h4>Services</h4>
+          <Link href="/services">Air Freight</Link>
+          <Link href="/services">Sea Freight</Link>
+          <Link href="/services">Land Transport</Link>
+          <Link href="/services">Customs Brokerage</Link>
+          <Link href="/services">Warehousing</Link>
+          <Link href="/services">Event Logistics</Link>
+        </div>
+
+        <div className={styles.contactCol}>
+          <h4>Contact Us</h4>
+          <div className={styles.contactItem}>
+            <strong>Dubai, UAE</strong>
+            <p>P.O. Box 123456, Deira, Dubai, UAE</p>
+          </div>
+          <div className={styles.contactItem}>
+            <strong>Phone</strong>
+            <p>+971 4 123 4567</p>
+            <p>+971 50 123 4567</p>
+          </div>
+          <div className={styles.contactItem}>
+            <strong>Email</strong>
+            <p>info@ddfreight.com</p>
+            <p>sales@ddfreight.com</p>
+          </div>
         </div>
       </div>
       <div className={styles.bottom}>
-        <p>&copy; {new Date().getFullYear()} DD FREIGHT LLC. All rights reserved.</p>
-        <p className={styles.credit}>
-          Shipped & Delivered by{' '}
-          <a href="https://www.baseofstars.com/" target="_blank" rel="noopener noreferrer">
-            Base of Stars
-          </a>
-        </p>
+        <div className={styles.bottomInner}>
+          <p>&copy; {new Date().getFullYear()} DD FREIGHT SHIPPING LLC. All rights reserved.</p>
+          <p className={styles.credit}>
+            Shipped & Delivered by{' '}
+            <a href="https://www.baseofstars.com/" target="_blank" rel="noopener noreferrer">
+              Base of Stars
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   )

@@ -102,6 +102,37 @@
   color: var(--red);
 }
 
+.navBtn {
+  background: var(--red);
+  color: var(--white);
+  padding: 10px 24px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 12px;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.25);
+  display: flex;
+  align-items: center;
+}
+
+.navBtn:hover {
+  background: var(--red-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.35);
+  color: var(--white);
+}
+
+.nav.scrolled .navBtn {
+  background: var(--navy);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.nav.scrolled .navBtn:hover {
+  background: var(--red);
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.25);
+}
+
 .hamburger {
   display: none;
   background: none;

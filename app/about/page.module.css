@@ -168,6 +168,98 @@
   line-height: 1.8;
 }
 
+/* Fleet */
+.fleet {
+  padding: 80px 0 120px;
+  text-align: center;
+}
+
+.fleet h2 {
+  font-size: 36px;
+  color: var(--navy);
+  margin-bottom: 16px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.fleetDesc {
+  max-width: 800px;
+  margin: 0 auto 56px;
+  font-size: 16px;
+  color: var(--gray-600);
+  line-height: 1.8;
+}
+
+.fleetGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.fleetItem {
+  position: relative;
+  height: 300px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.fleetItem:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.fleetItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.fleetItem:hover img {
+  transform: scale(1.1);
+}
+
+.fleetItem span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+  color: var(--white);
+  padding: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 1024px) {
+  .fleetGrid {
+    gap: 20px;
+  }
+  .fleetItem {
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fleet {
+    padding: 64px 0 80px;
+  }
+  .fleet h2 {
+    font-size: 28px;
+  }
+  .fleetGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .fleetItem {
+    height: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     padding: 120px 0 56px;
