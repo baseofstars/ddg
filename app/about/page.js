@@ -1,5 +1,6 @@
 import styles from './page.module.css'
 import ScrollReveal from '@/components/ScrollReveal'
+import ProgressiveImage from '@/components/ProgressiveImage'
 
 export const metadata = {
   title: 'About Us | DD FREIGHT LLC',
@@ -85,15 +86,15 @@ export default function About() {
             </p>
             <div className={styles.fleetGrid}>
               <div className={styles.fleetItem}>
-                <img src="https://images.unsplash.com/photo-1574684532296-1c290a613292?q=80&w=800&auto=format&fit=crop" alt="Sea Freight" />
+                <ProgressiveImage src="https://images.unsplash.com/photo-1574684532296-1c290a613292?q=80&w=800&auto=format&fit=crop" alt="Sea Freight" className={styles.fleetImg} />
                 <span>Ocean Carriers</span>
               </div>
               <div className={styles.fleetItem}>
-                <img src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?q=80&w=800&auto=format&fit=crop" alt="Air Freight" />
+                <ProgressiveImage src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?q=80&w=800&auto=format&fit=crop" alt="Air Freight" className={styles.fleetImg} />
                 <span>Air Cargo</span>
               </div>
               <div className={styles.fleetItem}>
-                <img src="https://images.unsplash.com/photo-1519003722824-192d9920105b?q=80&w=800&auto=format&fit=crop" alt="Land Transport" />
+                <ProgressiveImage src="https://images.unsplash.com/photo-1519003722824-192d9920105b?q=80&w=800&auto=format&fit=crop" alt="Land Transport" className={styles.fleetImg} />
                 <span>Ground Fleet</span>
               </div>
             </div>

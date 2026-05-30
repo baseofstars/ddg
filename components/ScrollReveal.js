@@ -1,20 +1,25 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function ScrollReveal({ children, delay = 0, className = '', as = 'div' }) {
   const ref = useRef(null)
+  const [isIntersected, setIsIntersected] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
+    setIsMounted(true)
     const el = ref.current
     if (!el) return
+
+    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
+      setIsIntersected(true)
+      return
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => {
-            el.style.opacity = '1'
-            el.style.transform = 'translateY(0)'
-          }, delay)
+          setIsIntersected(true)
           observer.unobserve(el)
         }
       },
@@ -23,18 +28,21 @@ export default function ScrollReveal({ children, delay = 0, className = '', as =
 
     observer.observe(el)
     return () => observer.disconnect()
-  }, [delay])
+  }, [])
 
   const Tag = as
+  const shouldHide = isMounted && !isIntersected
 
   return (
     <Tag
       ref={ref}
       className={`scroll-reveal ${className}`}
       style={{
-        opacity: 0,
-        transform: 'translateY(28px)',
-        transition: `opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms, transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms`,
+        opacity: shouldHide ? 0 : 1,
+        transform: shouldHide ? 'translateY(28px)' : 'translateY(0)',
+        transition: isMounted
+          ? `opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms, transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms`
+          : 'none',
       }}
     >
       {children}

@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import styles from './Navbar.module.css'
 
@@ -26,7 +27,7 @@ export default function Navbar() {
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.inner}>
         <Link href="/" className={styles.logo}>
-          <img src="/logo.png" alt="DD FREIGHT LLC" height="40" className={styles.logoImg} />
+          <Image src="/logo.png" alt="DD FREIGHT LLC" width={180} height={40} className={styles.logoImg} priority />
         </Link>
         <div className={styles.links}>
           {links.map((l) => (

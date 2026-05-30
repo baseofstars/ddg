@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import styles from './page.module.css'
 import CountUp from '@/components/CountUp'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -102,14 +103,16 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroGrain} />
         <div ref={heroImgRef} className={styles.heroImgWrap}>
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=1920&auto=format&fit=crop"
             alt="Mighty container ship at sea"
             className={styles.heroImg}
+            fill
+            priority
           />
         </div>
         <div className={styles.heroOverlay}>
-          <ScrollReveal>
+          <div>
             <p className={styles.heroSub}>SPECIALIZED SOLUTIONS</p>
             <h1 className={styles.heroTitle}>Media & Sports Logistics</h1>
             <p className={styles.heroSub2}>Precision in Motion. Speed on Demand. Reliability You Trust.</p>
@@ -117,7 +120,7 @@ export default function Home() {
               <a href="/contact" className={styles.btnPrimary}>Get a Quote</a>
               <a href="/services" className={styles.btnOutline}>Our Services</a>
             </div>
-          </ScrollReveal>
+          </div>
         </div>
       </section>
 
