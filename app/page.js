@@ -115,7 +115,7 @@ export default function Home() {
           <div>
             <p className={styles.heroSub}>SPECIALIZED SOLUTIONS</p>
             <h1 className={styles.heroTitle}>Media & Sports Logistics</h1>
-            <p className={styles.heroSub2}>Precision in Motion. Speed on Demand. Reliability You Trust.</p>
+            <p className={styles.heroSub2}>Precision in Motion. Delivery on Demand. Reliability You Trust.</p>
             <div className={styles.heroBtns}>
               <a href="/contact" className={styles.btnPrimary}>Get a Quote</a>
               <a href="/services" className={styles.btnOutline}>Our Services</a>
